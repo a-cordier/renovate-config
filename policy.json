@@ -1,0 +1,13 @@
+{
+    "extends": [
+      "config:base",
+      ":semanticCommits",
+      ":semanticCommitTypeAll(ci)"
+    ],
+    "prConcurrentLimit": 3,
+    "rebaseWhen": "conflicted",
+    "schedule": [
+        "before 3pm"
+    ]
+  }
+  
