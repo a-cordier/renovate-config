@@ -7,7 +7,6 @@
     "prConcurrentLimit": 3,
     "rebaseWhen": "conflicted",
     "schedule": [
-        "before 3pm"
+        "before 4pm"
     ]
 }
-  
