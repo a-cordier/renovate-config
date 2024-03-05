@@ -5,5 +5,6 @@ module.exports = {
   "platform": "github",
   "forkProcessing": "disabled",
   "dryRun": "full",
-  "autodiscover": true
+  "autodiscover": true,
+  "autodiscoverFilter": ["a-cordier/*"]
 };
