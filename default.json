@@ -1,9 +1,6 @@
 {
     "extends": ["config:base", ":label(dependencies)"],
     "rebaseWhen": "conflicted",
-    "schedule": [
-        "before 6pm"
-    ],
     "packageRules": [
         {
             "matchDatasources": ["orb"],
