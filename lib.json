@@ -1,12 +1,3 @@
 {
-    "extends": [
-      "config:base",
-      ":semanticCommits",
-      ":semanticCommitTypeAll(chore)"
-    ],
-    "prConcurrentLimit": 3,
-    "rebaseWhen": "conflicted",
-    "schedule": [
-        "before 4pm"
-    ]
+    "extends": ["github.com>a-cordier/renovate-config:default"]
 }

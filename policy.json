@@ -1,13 +1,17 @@
 {
-    "extends": [
-      "config:base",
-      ":semanticCommits",
-      ":semanticCommitTypeAll(ci)"
-    ],
-    "prConcurrentLimit": 3,
-    "rebaseWhen": "conflicted",
-    "schedule": [
-        "before 4pm"
+    "extends": ["github.com>a-cordier/renovate-config:default"],
+    "packageRules": [
+        {
+            "matchDepTypes": ["provided", "test", "build", "import", "parent"],
+            "matchUpdateTypes": ["patch", "minor"],
+            "automerge": false,
+            "automergeType": "branch",
+            "semanticCommitType": "ci"
+        },
+        {
+            "matchDepTypes": ["provided", "test", "build", "import", "parent"],
+            "matchUpdateTypes": ["major"],
+            "semanticCommitType": "ci"
+        }
     ]
-  }
-  
+}

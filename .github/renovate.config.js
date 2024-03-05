@@ -4,7 +4,7 @@ module.exports = {
   "onboarding": false,
   "platform": "github",
   "forkProcessing": "disabled",
-  "dryRun": "full",
+  "dryRun": null,
   "autodiscover": true,
   "autodiscoverFilter": ["a-cordier/*"]
 };
