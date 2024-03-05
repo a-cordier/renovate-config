@@ -5,5 +5,5 @@ module.exports = {
   "platform": "github",
   "forkProcessing": "disabled",
   "dryRun": "full",
-  "autoDiscover": true
+  "autodiscover": true
 };
