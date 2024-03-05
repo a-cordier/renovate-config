@@ -1,17 +1,25 @@
 {
-    "extends": ["github.com>a-cordier/renovate-config:default"],
+    "extends": ["config:base", ":label(policy-dependencies)"],
+    "rebaseWhen": "conflicted",
     "packageRules": [
         {
-            "matchDepTypes": ["provided", "test", "build", "import", "parent"],
+            "matchDatasources": ["orb"],
             "matchUpdateTypes": ["patch", "minor"],
-            "automerge": false,
+            "automerge": true,
             "automergeType": "branch",
             "semanticCommitType": "ci"
         },
         {
             "matchDepTypes": ["provided", "test", "build", "import", "parent"],
+            "matchUpdateTypes": ["patch", "minor"],
+            "automerge": true,
+            "automergeType": "branch",
+            "semanticCommitType": "chore"
+        },
+        {
+            "matchDepTypes": ["provided", "test", "build", "import", "parent"],
             "matchUpdateTypes": ["major"],
-            "semanticCommitType": "ci"
+            "semanticCommitType": "chore"
         }
     ]
 }
