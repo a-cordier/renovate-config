@@ -1,5 +1,5 @@
 {
-    "extends": ["config:base", ":label(lib-dependencies)"],
+    "extends": ["config:base", ":label(lib-dependencies), :disableDependencyDashboard"],
     "rebaseWhen": "conflicted",
     "packageRules": [
         {
